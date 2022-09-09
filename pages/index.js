@@ -10,7 +10,11 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Hello, I'm Tricia</h1>
+        <h1 className="font-poppins font-bold">Hello, I'm Tricia</h1>
+        <h3>👩🏻‍💻 Aspiring frontend developmer.</h3>
+        <h3>
+          📚 Currently a computer science student in University of London.
+        </h3>
       </main>
     </div>
   );
