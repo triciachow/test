@@ -31,8 +31,8 @@ export default function Involvements() {
           </ul>
         </div>
       </div>
-      <div className="flex justify-center relative">
-        <button className="border-2 border-amber-400 rounded-md px-4 py-2 text-amber-400 font-bold hover:bg-amber-400 hover:text-white w-32">
+      <div className="flex justify-center relative mb-8">
+        <button className="border-2 border-amber-400 rounded-md px-4 py-2 text-amber-400 font-bold hover:bg-amber-400 hover:text-white">
           Download Resume PDF
         </button>
       </div>
