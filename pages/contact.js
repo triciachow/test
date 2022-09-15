@@ -12,11 +12,11 @@ export default function Contact() {
         <div className="text-center font-bold">I&apos;m reachable via</div>
         <div className="flex flex-col xl:flex-row justify-center items-center gap-y-8 xl:gap-x-8">
           <div className="flex flex-col text-center gap-y-2">
-            <Image src={email} width="226" height="186" />
+            <Image src={email} width="226" height="186" alt="" />
             <div>suyeechow0212@gmail.com</div>
           </div>
           <div className="flex flex-col text-center gap-y-2">
-            <Image src={mobile} width="355" height="185" />
+            <Image src={mobile} width="355" height="185" alt="" />
             <div>9870 9649</div>
           </div>
         </div>

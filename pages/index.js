@@ -31,7 +31,7 @@ export default function Home() {
           </div>
         </div>
         <div className="xl:h-1/2 h-1/3 flex">
-          <Image src={img} width="494" height="236" />
+          <Image src={img} width="494" height="236" alt="" />
         </div>
       </main>
     </>

@@ -16,7 +16,7 @@ export default function NotFound() {
   return (
     <>
       <div className="flex flex-col items-center gap-y-4 py-8">
-        <Image src={img} width={600} height={400} />
+        <Image src={img} width={600} height={400} alt="" />
         <h2 className="text-5xl font-bold my-4">
           Ooopsss... That page can&apos;t be found.
         </h2>
