@@ -29,7 +29,7 @@ export default function ProjectsPage({ projects }) {
         ))}
       </div>
       <div className="absolute -bottom-20 -left-10 -z-10 opacity-50">
-        <Image src={img} width="600" height="640" />
+        <Image src={img} width="600" height="640" alt="Project image" />
       </div>
     </>
   );

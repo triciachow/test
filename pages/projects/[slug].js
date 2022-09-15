@@ -55,6 +55,7 @@ const renderOption = {
             src={`https:${node.data.target.fields.file.url}`}
             height={node.data.target.fields.file.details.image.height}
             width={node.data.target.fields.file.details.image.width}
+            alt="Project images"
           />
         </div>
       );
@@ -82,6 +83,7 @@ export default function ProjectDetails({ project }) {
           src={`https:${featuredImage.fields.file.url}`}
           width={featuredImage.fields.file.details.image.width}
           height={featuredImage.fields.file.details.image.height}
+          alt="Project image"
         />
 
         <div className="flex gap-x-4">

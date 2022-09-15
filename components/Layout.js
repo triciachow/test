@@ -22,9 +22,6 @@ export default function Layout({ children }) {
         </div>
       </header>
       <div className="mx-8 xl:mx-24 h-full">{children}</div>
-      {/* <footer className="text-slate-400 p-8 text-center">
-        <small className="">Developed by Tricia Chow</small>
-      </footer> */}
     </>
   );
 }

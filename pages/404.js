@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image"
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import img from "../assets/404.svg";
@@ -11,13 +11,15 @@ export default function NotFound() {
     setTimeout(() => {
       router.push("/");
     }, 4000);
-  }, []);
+  }, [router]);
 
   return (
     <>
       <div className="flex flex-col items-center gap-y-4 py-8">
         <Image src={img} width={600} height={400} />
-        <h2 className="text-5xl font-bold my-4">Ooopsss... That page can't be found :'(</h2>
+        <h2 className="text-5xl font-bold my-4">
+          Ooopsss... That page can&apos;t be found.
+        </h2>
         <p>
           Redirecting to <Link href="/">home</Link> in a few seconds!
         </p>

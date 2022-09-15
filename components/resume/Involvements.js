@@ -1,5 +1,6 @@
 import Image from "next/image";
 import img from "../../assets/resume.svg";
+import { involvements } from "../../lib/involvements";
 
 export default function Involvements() {
   return (
@@ -9,33 +10,18 @@ export default function Involvements() {
           Involvements
         </div>
         <div className="lg:w-8/12 w-full h-full flex flex-col justify-between">
-          <p className="font-bold mb-2">
-            Shopee Product & Design Challenge 2022
-          </p>
-          <ul>
-            <li>Participant (Results yet to be released)</li>
-            <li>September 2022 - Present</li>
-          </ul>
-          <p className="font-bold my-2">
-            SIM Innovation and Networking Society (IONS)
-          </p>
-          <ul>
-            <li>IONS Ambassador</li>
-            <li>August 2022 - Present</li>
-          </ul>
-          <p className="font-bold my-2">SIM Singapore Affairs Society Beacon</p>
-          <ul>
-            <li>ExCo Member - Head of Digital</li>
-            <li>August 2022 - Present</li>
-          </ul>
-          <p className="font-bold my-2">SIM UI/UX Club</p>
-          <ul>
-            <li>ExCo Member - Head of Community</li>
-            <li>November 2020 - May 2021</li>
-          </ul>
+          {involvements.map((inv, index) => (
+            <div key={index}>
+              <p className="font-bold mb-2">{inv.activity}</p>
+              <ul>
+                <li>{inv.details}</li>
+                <li>{inv.duration}</li>
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
-      <div className="flex justify-center relative mb-8">
+      <div className="flex justify-center mb-8">
         <a
           href="/WIP_Resume.pdf"
           download
@@ -47,9 +33,8 @@ export default function Involvements() {
           </div>
         </a>
       </div>
-
-      <div className="absolute -right-60 -z-10 opacity-80">
-        <Image src={img} width="606" height="637" />
+      <div className="absolute -bottom-20 -left-40 -z-10 opacity-50 hidden lg:block">
+        <Image src={img} width="606" height="637" alt="" />
       </div>
     </>
   );

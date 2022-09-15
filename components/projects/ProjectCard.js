@@ -14,6 +14,7 @@ export default function ProjectCard({ project }) {
             width={thumbnail.fields.file.details.image.width}
             height={thumbnail.fields.file.details.image.height}
             objectFit="contain"
+            alt="Project image"
           />
 
           <div className="flex flex-col justify-between gap-y-2 px-4">

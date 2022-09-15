@@ -8,7 +8,7 @@ export default function Home() {
       <main className="h-full flex flex-col xl:flex-row justify-center gap-x-8">
         <div className="xl:h-1/2 h-1/3 flex flex-col justify-center">
           <h1 className="font-poppins font-bold text-5xl mb-8">
-            Hello, I'm <span className="text-amber-400">Tricia</span>
+            Hello, I&apos;m <span className="text-amber-400">Tricia</span>
           </h1>
           <div className="flex flex-col gap-y-2 mb-8">
             <h3>👩🏻‍💻 Aspiring frontend developer.</h3>
