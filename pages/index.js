@@ -5,7 +5,7 @@ import img from "../assets/hello.svg";
 export default function Home() {
   return (
     <>
-      <main className="h-full flex flex-col xl:flex-row justify-center items-center gap-x-8">
+      <main className="h-full flex flex-col xl:flex-row justify-center gap-x-8">
         <div className="xl:h-1/2 h-1/3 flex flex-col justify-center">
           <h1 className="font-poppins font-bold text-5xl mb-8">
             Hello, I'm <span className="text-amber-400">Tricia</span>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img from "../assets/resume.svg";
+import img from "../../assets/resume.svg";
 
 export default function Involvements() {
   return (
@@ -23,18 +23,29 @@ export default function Involvements() {
             <li>IONS Ambassador</li>
             <li>August 2022 - Present</li>
           </ul>
+          <p className="font-bold my-2">SIM Singapore Affairs Society Beacon</p>
+          <ul>
+            <li>ExCo Member - Head of Digital</li>
+            <li>August 2022 - Present</li>
+          </ul>
           <p className="font-bold my-2">SIM UI/UX Club</p>
           <ul>
             <li>ExCo Member - Head of Community</li>
             <li>November 2020 - May 2021</li>
-            <li>GPA: 3.6 / 4.0</li>
           </ul>
         </div>
       </div>
       <div className="flex justify-center relative mb-8">
-        <button className="border-2 border-amber-400 rounded-md px-4 py-2 text-amber-400 font-bold hover:bg-amber-400 hover:text-white">
-          Download Resume PDF
-        </button>
+        <a
+          href="/WIP_Resume.pdf"
+          download
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="border-2 border-amber-400 rounded-md px-4 py-2 text-amber-400 font-bold hover:bg-amber-400 hover:text-white">
+            Download Resume PDF
+          </div>
+        </a>
       </div>
 
       <div className="absolute -right-60 -z-10 opacity-80">

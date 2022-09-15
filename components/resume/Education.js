@@ -6,25 +6,17 @@ export default function Education() {
           Education
         </div>
         <div className="lg:w-8/12 w-full h-full flex flex-col justify-between">
-          <p className="font-bold mb-2">University of London (SIM Campus)</p>
+          <p className="font-bold mb-2">
+            Gold Smith, University of London (SIM Campus)
+          </p>
           <ul>
             <li>Bachelor of Science in Computer Science</li>
             <li>October 2020 - October 2023</li>
           </ul>
           <p className="font-bold my-2">Relevant Coursework in UoL</p>
-          <div className="grid grid-rows-2 grid-flow-col gap-4 text-amber-400 font-bold">
-            <div className="border border-amber-400 rounded-md p-2 flex items-center bg-white">
-              Agile Software Projects
-            </div>
-            <div className="border border-amber-400 rounded-md p-2 flex items-center bg-white">
-              Database, Network and the Web
-            </div>
-            <div className="border border-amber-400 rounded-md p-2 flex items-center bg-white">
-              Web Development
-            </div>
-            <div className="border border-amber-400 rounded-md p-2 flex items-center bg-white">
-              Software Design and Development
-            </div>
+          <div>
+            Agile Software ProjectsDatabase, Network and the Web, Web
+            Development, Software Design and Development
           </div>
           <p className="font-bold my-2">
             Royal Melbourne Institute of Technology

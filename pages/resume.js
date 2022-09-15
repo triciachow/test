@@ -1,8 +1,8 @@
 import Image from "next/image";
-import About from "../components/About";
-import Education from "../components/Education";
-import Involvements from "../components/Involvements";
-import Skills from "../components/Skills";
+import About from "../components/resume/About";
+import Education from "../components/resume/Education";
+import Involvements from "../components/resume/Involvements";
+import Skills from "../components/resume/Skills";
 
 export default function Resume() {
   return (
