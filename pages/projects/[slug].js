@@ -43,6 +43,7 @@ export async function getStaticProps({ params }) {
 
   return {
     props: { project: items[0] },
+    revalidate: 1,
   };
 }
 
@@ -75,6 +76,8 @@ export default function ProjectDetails({ project }) {
     githubLink,
     deployedLink,
   } = project.fields;
+
+  console.log(featuredImage.fields);
 
   return (
     <>
