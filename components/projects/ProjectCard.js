@@ -3,16 +3,16 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function ProjectCard({ project }) {
-  const { title, description, slug, thumbnail } = project.fields;
+  const { title, description, slug, thumbnail } = project?.fields;
 
   return (
     <>
       <Link href={`/projects/${slug}`}>
         <div className="flex flex-col xl:w-4/12 gap-y-4 h-full rounded-lg bg-white drop-shadow-sm cursor-pointer">
           <Image
-            src={`https:${thumbnail.fields.file.url}`}
-            width={thumbnail.fields.file.details.image.width}
-            height={thumbnail.fields.file.details.image.height}
+            src={`https:${thumbnail?.fields?.file?.url}`}
+            width={thumbnail?.fields?.file?.details?.image?.width}
+            height={thumbnail?.fields?.file?.details?.image?.height}
             objectFit="contain"
             alt="Project image"
           />

@@ -13,19 +13,18 @@ export async function getStaticProps() {
 
   return {
     props: {
-      projects: res.items,
+      projects: res?.items,
     },
     revalidate: 1,
   };
 }
 
 export default function ProjectsPage({ projects }) {
-  // console.log(projects);
   return (
     <>
       <div className="flex flex-col md:flex-row justify-center gap-10 w-4/5 py-6 mx-auto relative">
         {projects.map(project => (
-          <ProjectCard key={project.sys.id} project={project} />
+          <ProjectCard key={project?.sys?.id} project={project} />
         ))}
       </div>
       <div className="absolute -bottom-20 -left-10 -z-10 opacity-50">

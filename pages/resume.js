@@ -1,4 +1,3 @@
-import Image from "next/image";
 import About from "../components/resume/About";
 import Education from "../components/resume/Education";
 import Involvements from "../components/resume/Involvements";
