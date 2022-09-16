@@ -5,8 +5,8 @@ import img from "../assets/hello.svg";
 export default function Home() {
   return (
     <>
-      <main className="h-full flex flex-col lg:flex-row justify-center md:items-center sm:items-center gap-x-8">
-        <div className="lg:h-1/2 h-1/3 flex flex-col justify-center">
+      <main className="h-full flex flex-col lg:flex-row justify-center gap-x-8">
+        <div className="lg:h-1/2 h-1/3 flex flex-col justify-center mt-4">
           <h1 className="font-poppins font-bold text-5xl mb-8">
             Hello, I&apos;m <span className="text-amber-400">Tricia 🙋🏻‍♀️</span>
           </h1>
