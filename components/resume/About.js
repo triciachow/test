@@ -2,7 +2,6 @@ import Link from "next/link";
 import { about } from "../../lib/about";
 
 export default function About() {
-
   return (
     <>
       <div className="flex flex-col lg:flex-row gap-y-4 justify-center items-center py-6 gap-x-4 border-b">

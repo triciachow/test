@@ -5,10 +5,10 @@ import img from "../assets/hello.svg";
 export default function Home() {
   return (
     <>
-      <main className="h-full flex flex-col xl:flex-row justify-center gap-x-8">
-        <div className="xl:h-1/2 h-1/3 flex flex-col justify-center">
+      <main className="h-full flex flex-col lg:flex-row justify-center md:items-center sm:items-center gap-x-8">
+        <div className="lg:h-1/2 h-1/3 flex flex-col justify-center">
           <h1 className="font-poppins font-bold text-5xl mb-8">
-            Hello, I&apos;m <span className="text-amber-400">Tricia</span>
+            Hello, I&apos;m <span className="text-amber-400">Tricia 🙋🏻‍♀️</span>
           </h1>
           <div className="flex flex-col gap-y-2 mb-8">
             <h3>👩🏻‍💻 Aspiring frontend developer.</h3>
@@ -30,7 +30,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="xl:h-1/2 h-1/3 flex">
+        <div className="lg:h-1/2 h-1/3 flex mt-6">
           <Image src={img} width="494" height="236" alt="" />
         </div>
       </main>

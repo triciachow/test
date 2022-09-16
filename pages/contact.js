@@ -5,7 +5,7 @@ import mobile from "../assets/mobile.svg";
 export default function Contact() {
   return (
     <>
-      <div className="h-full flex flex-col items-center gap-y-8">
+      <div className="h-full flex flex-col items-center gap-y-8 pb-8">
         <h1 className="my-8 font-bold text-5xl text-amber-400 text-center">
           Hey! Thanks for viewing <br /> my portfolio.
         </h1>

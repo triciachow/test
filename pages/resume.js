@@ -6,7 +6,7 @@ import Skills from "../components/resume/Skills";
 export default function Resume() {
   return (
     <>
-      <div className="flex flex-col gap-y-8 xl:w-8/12 m-auto">
+      <div className="flex flex-col xl:w-8/12 m-auto">
         <About />
         <Education />
         <Skills />

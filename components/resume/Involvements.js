@@ -12,7 +12,7 @@ export default function Involvements() {
         <div className="lg:w-8/12 w-full h-full flex flex-col justify-between">
           {involvements.map((inv, index) => {
             return (
-              <div key={index}>
+              <div key={index} className="mb-4">
                 <p className="font-bold mb-2">{inv.activity}</p>
                 <ul>
                   <li>{inv.details}</li>
