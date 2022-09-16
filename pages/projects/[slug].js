@@ -28,7 +28,6 @@ export const getStaticPaths = async () => {
 export async function getStaticProps({ params }) {
   const { items } = await client.getEntries({
     content_type: "portfolioProjects",
-    // match the slug
     "fields.slug": params.slug,
   });
 
@@ -65,6 +64,9 @@ const renderOption = {
 };
 
 export default function ProjectDetails({ project }) {
+  if (!project)
+    return <div className="text-center mt-8">Fetching project details...</div>;
+
   const {
     featuredImage,
     keywords,
