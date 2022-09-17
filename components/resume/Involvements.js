@@ -25,7 +25,7 @@ export default function Involvements() {
       </div>
       <div className="flex justify-center mb-8">
         <a
-          href="/WIP_Resume.pdf"
+          href="/Resume_Tricia.pdf"
           download
           target="_blank"
           rel="noopener noreferrer"

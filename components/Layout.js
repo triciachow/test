@@ -9,7 +9,7 @@ export default function Layout({ children }) {
       <Head>
         <title>Tricia C.</title>
       </Head>
-      <header className="flex justify-between items-center h-24 font-bold mx-8 xl:mx-24 border-b border-slate-200">
+      <header className="flex justify-between items-center h-24 font-bold mx-6 xl:mx-24 border-b border-slate-200">
         <Link href="/">Tricia C.</Link>
         <div className="flex gap-x-10">
           {navItems.map((item, index) => {
@@ -24,7 +24,7 @@ export default function Layout({ children }) {
           })}
         </div>
       </header>
-      <div className="mx-8 xl:mx-24 h-full">{children}</div>
+      <div className="mx-6 xl:mx-24 h-full">{children}</div>
     </>
   );
 }

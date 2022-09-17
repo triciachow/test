@@ -103,13 +103,13 @@ export default function ProjectDetails({ project }) {
         </div>
         <div className="flex gap-x-8">
           <Link href={githubLink}>
-            <button className="my-8 flex gap-x-2 border-2 border-amber-400 rounded-md px-4 py-2 text-amber-400 font-bold hover:bg-amber-400 hover:text-white">
+            <button className="my-8 flex justify-center items-center gap-x-2 border-2 border-amber-400 rounded-md px-4 py-2 text-amber-400 font-bold hover:bg-amber-400 hover:text-white">
               View on Github <Github />
             </button>
           </Link>
           {deployedLink && (
             <Link href={deployedLink}>
-              <button className="my-8 flex gap-x-2 border-2 border-amber-400 rounded-md px-4 py-2 text-amber-400 font-bold hover:bg-amber-400 hover:text-white">
+              <button className="my-8 flex justify-center items-center gap-x-2 border-2 border-amber-400 rounded-md px-4 py-2 text-amber-400 font-bold hover:bg-amber-400 hover:text-white">
                 View live website <ExternalLink />
               </button>
             </Link>
