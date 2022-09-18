@@ -8,7 +8,7 @@ export default function ProjectCard({ project }) {
   return (
     <>
       <Link href={`/projects/${slug}`}>
-        <div className="flex flex-col xl:w-4/12 gap-y-4 h-full rounded-lg bg-white drop-shadow-sm cursor-pointer">
+        <div className="flex flex-col xl:w-5/12 gap-y-4 h-full rounded-lg bg-white drop-shadow-sm cursor-pointer">
           <Image
             src={`https:${thumbnail?.fields?.file?.url}`}
             width={thumbnail?.fields?.file?.details?.image?.width}

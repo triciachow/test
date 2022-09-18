@@ -22,7 +22,7 @@ export async function getStaticProps() {
 export default function ProjectsPage({ projects }) {
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-center gap-10 lg:w-4/5 py-6 mx-auto relative">
+      <div className="flex flex-col md:flex-row justify-center gap-10 md:w-3/5 py-6 mx-auto relative h-auto flex-wrap">
         {projects.map(project => {
           return <ProjectCard key={project.sys.id} project={project} />;
         })}
