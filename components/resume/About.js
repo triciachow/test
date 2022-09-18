@@ -16,10 +16,6 @@ export default function About() {
               <p className="font-semibold">{about.email}</p>
             </div>
             <div>
-              <small>Mobile</small>
-              <p className="font-semibold">{about.mobile}</p>
-            </div>
-            <div>
               <small>Github</small>
               <Link href={`https://${about.github}`}>
                 <p className="font-semibold">{about.github}</p>

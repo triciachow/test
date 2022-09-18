@@ -30,7 +30,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="lg:h-1/2 h-1/3 flex mt-6">
+        <div className="lg:h-1/2 h-1/3 flex mt-8">
           <Image src={img} width="494" height="236" alt="" />
         </div>
       </main>

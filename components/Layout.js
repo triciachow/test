@@ -25,7 +25,7 @@ export default function Layout({ children }) {
         </div>
       </header>
 
-      <div className="mx-6 xl:mx-24 h-4/5">{children}</div>
+      <div className="mx-6 xl:mx-24 h-full">{children}</div>
     </>
   );
 }
