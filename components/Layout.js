@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
-const navItems = ["resume", "projects", "contact"];
+const navItems = ["projects", "contact"];
 
 export default function Layout({ children }) {
   return (
