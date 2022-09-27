@@ -30,13 +30,10 @@ export default function Involvements() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="border-2 border-amber-400 rounded-md px-4 py-2 text-amber-400 font-bold hover:bg-amber-400 hover:text-white">
+          <div className="border-2 border-sky-600 rounded-md px-4 py-2 text-sky-600 font-bold hover:bg-sky-600 hover:text-white">
             Download Resume PDF
           </div>
         </a>
-      </div>
-      <div className="absolute -bottom-20 -left-40 -z-10 opacity-50 hidden lg:block">
-        <Image src={img} width="606" height="637" alt="" />
       </div>
     </>
   );

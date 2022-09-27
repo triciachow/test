@@ -10,7 +10,7 @@ export default function About() {
         </div>
         <div className="lg:w-8/12 w-full h-full flex flex-col gap-y-4">
           <p>{about.intro}</p>
-          <div className="flex flex-col md:flex-row justify-around gap-4 p-4 border-amber-400 rounded-md bg-amber-100 text-amber-500 w-full lg:w-full h-auto drop-shadow-sm">
+          <div className="flex flex-col md:flex-row justify-around gap-4 p-4 border-sky-600 rounded-md  bg-gradient-to-r from-sky-100 to-fuchsia-100 text-sky-600 w-full lg:w-full h-auto drop-shadow-sm">
             <div>
               <small>Email</small>
               <p className="font-semibold">{about.email}</p>

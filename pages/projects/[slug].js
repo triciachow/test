@@ -90,7 +90,7 @@ export default function ProjectDetails({ project }) {
           alt="Project image"
         />
 
-        <div className="flex gap-x-4">
+        <div className="flex gap-x-4 flex-wrap">
           {keywords.map((keyword, index) => {
             return <Keywords key={index} keyword={keyword} />;
           })}

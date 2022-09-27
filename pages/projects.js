@@ -22,13 +22,10 @@ export async function getStaticProps() {
 export default function ProjectsPage({ projects }) {
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-center gap-10 md:w-3/5 py-6 mx-auto relative h-auto flex-wrap">
+      <div className="grid justify-items-center md:flex md:justify-center gap-10 w-full py-6 mx-auto min-h-screen flex-wrap">
         {projects.map(project => {
           return <ProjectCard key={project.sys.id} project={project} />;
         })}
-      </div>
-      <div className="absolute -bottom-20 -left-10 -z-10 opacity-50">
-        <Image src={img} width="600" height="640" alt="Project image" />
       </div>
     </>
   );
