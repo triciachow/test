@@ -1,15 +1,16 @@
 import Head from "next/head";
 import Link from "next/link";
+import Toggle from "./ThemeToggle";
 
 const navItems = ["projects", "contact"];
 
 export default function Layout({ children }) {
   return (
-    <>
+    <div className="bg-white dark:bg-gray-900 dark:text-gray-300 transition-all min-h-screen">
       <Head>
         <title>Tricia C.</title>
       </Head>
-      <header className="flex justify-between items-center h-24 font-bold mx-6 xl:mx-24 border-b border-slate-200">
+      <header className="flex justify-between items-center h-24 font-bold mx-6 xl:mx-24">
         <div className="hover:text-sky-600 transition ease-in-out">
           <Link href="/">Tricia C.</Link>
         </div>
@@ -25,10 +26,11 @@ export default function Layout({ children }) {
               </div>
             );
           })}
+          <Toggle />
         </div>
       </header>
 
       <div className="mx-6 xl:mx-24 h-full">{children}</div>
-    </>
+    </div>
   );
 }
