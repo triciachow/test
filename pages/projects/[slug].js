@@ -99,8 +99,7 @@ export default function ProjectDetails({ project }) {
         <div className="flex flex-col gap-y-4">
           <h1 className="text-5xl font-bold my-6">Project Title: {title}</h1>
           <p>Description: {description}</p>
-          <h2 className="text-xl font-bold">Project Overview</h2>
-          <div className="flex flex-col gap-y-2">
+          <div className="flex flex-col unreset">
             {documentToReactComponents(fullDetails, renderOption)}
           </div>
         </div>
