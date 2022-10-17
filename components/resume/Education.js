@@ -15,8 +15,8 @@ export default function Education() {
                 <ul>
                   <li>{edu.major}</li>
                   <li>
-                    {edu.coursework && (
-                      <span>Relevant Coursework: {edu.coursework}</span>
+                    {edu.modules && (
+                      <span>Relevant Modules: {edu.modules}</span>
                     )}
                   </li>
                   <li>{edu.duration}</li>

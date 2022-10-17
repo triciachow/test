@@ -18,7 +18,7 @@ export default function About() {
             <div>
               <small>Github</small>
               <Link href={`https://${about.github}`}>
-                <p className="font-semibold">{about.github}</p>
+                <a className="font-semibold block">{about.github}</a>
               </Link>
             </div>
           </div>

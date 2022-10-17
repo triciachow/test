@@ -1,7 +1,5 @@
 import { createClient } from "contentful";
-import Image from "next/image";
 import ProjectCard from "../components/projects/ProjectCard";
-import img from "../assets/projects.svg";
 
 export async function getStaticProps() {
   const client = createClient({
