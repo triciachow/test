@@ -9,14 +9,16 @@ export default function ProjectCard({ project }) {
     <>
       <Link href={`/projects/${slug}`}>
         <div className="flex flex-col w-[320px] h-[380px] rounded-lg drop-shadow-sm cursor-pointer border border-slate-200 hover:border-slate-400 dark:hover:border-sky-600 transition ease-in-out">
-          <Image
-            src={`https:${thumbnail?.fields?.file?.url}`}
-            width={thumbnail?.fields?.file?.details?.image?.width}
-            height={thumbnail?.fields?.file?.details?.image?.height}
-            objectFit="cover"
-            className="rounded-t-lg"
-            alt="Project image"
-          />
+          <picture>
+            <img
+              src={`https:${thumbnail?.fields?.file?.url}`}
+              width={thumbnail?.fields?.file?.details?.image?.width}
+              height={thumbnail?.fields?.file?.details?.image?.height}
+              objectfit="cover"
+              className="rounded-t-lg"
+              alt="Project image"
+            />
+          </picture>
 
           <div className="flex flex-col justify-between gap-y-2 px-4 mt-4">
             <h2 className="font-bold">{title}</h2>

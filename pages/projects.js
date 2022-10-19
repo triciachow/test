@@ -21,8 +21,8 @@ export default function ProjectsPage({ projects }) {
   return (
     <>
       <div className="grid justify-items-center md:flex md:justify-center gap-10 w-full py-6 mx-auto min-h-screen flex-wrap">
-        {projects.map(project => {
-          return <ProjectCard key={project.sys.id} project={project} />;
+        {projects?.map(project => {
+          return <ProjectCard key={project?.sys?.id} project={project} />;
         })}
       </div>
     </>

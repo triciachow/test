@@ -12,23 +12,24 @@ const client = createClient({
 });
 
 export const getStaticPaths = async () => {
-  const res = await client.getEntries({ content_type: "portfolioProjects" });
-  const paths = res.items.map(item => {
+  const res = await client?.getEntries({ content_type: "portfolioProjects" });
+  const paths = res?.items?.map(item => {
     return {
-      params: { slug: item.fields.slug },
+      params: { slug: item?.fields?.slug },
     };
   });
 
   return {
     paths,
-    fallback: true,
+    // fallback: true,
+    fallback: "blocking",
   };
 };
 
 export async function getStaticProps({ params }) {
-  const { items } = await client.getEntries({
+  const { items } = await client?.getEntries({
     content_type: "portfolioProjects",
-    "fields.slug": params.slug,
+    "fields.slug": params?.slug,
   });
 
   if (!items.length) {
@@ -54,12 +55,14 @@ const renderOption = {
     [BLOCKS.EMBEDDED_ASSET]: node => {
       return (
         <div className="w-full ">
-          <Image
-            src={`https:${node.data.target.fields.file.url}`}
-            height={node.data.target.fields.file.details.image.height}
-            width={node.data.target.fields.file.details.image.width}
-            alt="Project images"
-          />
+          <picture>
+            <img
+              src={`https:${node?.data?.target?.fields?.file?.url}`}
+              height={node?.data?.target?.fields?.file?.details?.image?.height}
+              width={node?.data?.target?.fields?.file?.details?.image?.width}
+              alt="Project images"
+            />
+          </picture>
         </div>
       );
     },
@@ -78,20 +81,22 @@ export default function ProjectDetails({ project }) {
     fullDetails,
     githubLink,
     deployedLink,
-  } = project.fields;
+  } = project?.fields;
 
   return (
     <>
       <div className="lg:w-8/12 xl:w-6/12 mx-auto py-6">
-        <Image
-          src={`https:${featuredImage.fields.file.url}`}
-          width={featuredImage.fields.file.details.image.width}
-          height={featuredImage.fields.file.details.image.height}
-          alt="Project image"
-        />
+        <picture>
+          <img
+            src={`https:${featuredImage?.fields?.file?.url}`}
+            width={featuredImage?.fields?.file?.details?.image?.width}
+            height={featuredImage?.fields?.file?.details?.image?.height}
+            alt="Project image"
+          />
+        </picture>
 
         <div className="flex gap-x-4 flex-wrap">
-          {keywords.map((keyword, index) => {
+          {keywords?.map((keyword, index) => {
             return <Keywords key={index} keyword={keyword} />;
           })}
         </div>

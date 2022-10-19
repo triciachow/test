@@ -1,5 +1,6 @@
 import Image from "next/image";
-import email from "../assets/email.svg";
+// import email from "../assets/email.svg";
+// import email from "email.svg";
 
 export default function Contact() {
   return (
@@ -10,7 +11,10 @@ export default function Contact() {
         </h1>
         <div className="text-center font-bold">I&apos;m reachable via</div>
         <div className="flex flex-col text-center gap-y-6">
-          <Image src={email} width="226" height="186" alt="" />
+          <picture>
+            <img src="/email.svg" width="226" height="186" alt="Email" />
+          </picture>
+          {/* <Image src={email} width="226" height="186" alt="Email" /> */}
           <div>suyeechow0212@gmail.com</div>
         </div>
       </div>
