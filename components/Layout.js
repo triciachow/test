@@ -31,6 +31,13 @@ export default function Layout({ children }) {
       </header>
 
       <div className="mx-6 xl:mx-24 h-full">{children}</div>
+      <script
+        type="text/javascript"
+        src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+        id="aisensy-wa-widget"
+        widget-id="Fs2tBt"
+        defer
+      />
     </div>
   );
 }
